@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- <%- include('./partials/header.ejs')  %> -->
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="details content">
+        <div><%=blog.title %></div>
+        <div class="content">
+            <p><%= blog.body %></p>
+        </div>
+        <a data-doc="<%= blog._id %>" class="delete">delete</a>
+    </div>
+
+    <%- include('./partials/footer.ejs')  %>
+
+    <script>
+        const trashcan = document.querySelector('a.delete');
+
+        trashcan.addEventListener('click', (e) => {
+            const endpoint = `/blogs/${trashcan.dataset.doc}`;
+
+            fetch(endpoint, {
+                method: 'DELETE'
+            })
+                .then((reponse) => {
+                    response.json() // parses the json data into a js object for use
+                })
+                .then((data) => { // then we catch the js object here 
+                    console.log(data); // and log it into the console
+                    // now we have to make a redirect 
+                    window.location.href = data.redirect //using the response property from our app.js
+                })
+                .catch((err) => {
+                    console.log(err);
+                })
+        })
+    </script>
+</body>
+</html>
