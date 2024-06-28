@@ -1,10 +1,14 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  entry: "./app.js", // Replace with your main entry file
+  mode: 'production', // You can set this to 'production' for production builds
+  entry: './app.js', // Entry point of your application
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "public"),
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public') // Output directory
   },
-  target: "node", // Since this is a Node.js application
+  target: 'node', // Since this is a Node.js application
+  stats: {
+    errorDetails: true // Show error details for easier debugging
+  }
 };
