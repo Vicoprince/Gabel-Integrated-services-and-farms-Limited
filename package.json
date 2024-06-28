@@ -1,4 +1,12 @@
 {
+  "name": "gabel-integrated-services",
+  "version": "1.0.0",
+  "description": "Node.js application for Gabel Integrated Services and Farms Limited",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "webpack"
+  },
   "devDependencies": {
     "nodemon": "^3.1.4"
   },
