@@ -4,8 +4,7 @@
   "description": "Node.js application for Gabel Integrated Services and Farms Limited",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "build": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
