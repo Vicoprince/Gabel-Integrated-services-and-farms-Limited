@@ -322,6 +322,12 @@
 
 
 /*** Feature ***/
+@media (max-width: 466px) {
+    .g-4 {
+        display: block;
+    }
+}
+
 @media (min-width: 992px) {
     .container.feature {
         max-width: 100% !important;
