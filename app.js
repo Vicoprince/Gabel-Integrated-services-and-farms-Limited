@@ -53,7 +53,7 @@ app.post("/quote_request", async (req, res) => {
   // Setup email data
   let mailOptions = {
     from: '"Gabel Integrated Services and Farms Limited" gabelintegratedfarmsltd@gmail.com', // sender address
-    to: "oluajimativictor@gmail.com", // list of receivers
+    to: "gabelintegratedfarmsltd@gmail.com", // list of receivers
     subject: "New Quote Request", // Subject line
     text: `You have a new quote request from:
         Name: ${name}
@@ -112,7 +112,7 @@ app.post("/quote_services", async (req, res) => {
   // Setup email data
   let mailOptions2 = {
     from: '"Gabel Integrated Services and Farms Limited" gabelintegratedfarmsltd@gmail.com', // sender address
-    to: "oluajimativictor@gmail.com", // list of receivers
+    to: "gabelintegratedfarmsltd@gmail.com", // list of receivers
     subject: "New Quote Request", // Subject line
     text: `You have a new quote request from:
         Name: ${name}
@@ -170,7 +170,7 @@ app.post("/send_message", async (req, res) => {
   // Setup email data
   let mailOptions3 = {
     from: '"Gabel Integrated Services and Farms Limited" gabelintegratedfarmsltd@gmail.com', // sender address
-    to: "oluajimativictor@gmail.com", // list of receivers
+    to: "gabelintegratedfarmsltd@gmail.com", // list of receivers
     subject: "New Message", // Subject line
     text: `You have a new message from:
         Name: ${name}
@@ -228,7 +228,7 @@ app.post("/signup", async (req, res) => {
   // Setup email data
   let mailOptions4 = {
     from: '"Gabel Integrated Services and Farms Limited" gabelintegratedfarmsltd@gmail.com', // sender address
-    to: "oluajimativictor@gmail.com", // list of receivers
+    to: "gabelintegratedfarmsltd@gmail.com", // list of receivers
     subject: "New subscription", // Subject line
     text: `You have a new Newsletter subscription from:
         Email: ${email}`,
